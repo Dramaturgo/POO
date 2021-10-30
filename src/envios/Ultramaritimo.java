@@ -17,7 +17,7 @@ public class Ultramaritimo  extends Naviera{
     public double calcularCosto(){
 
         double v = this.getVolumenMetrico () * 500 + (this.getVolumenMetrico () * 10) * (this.getCategoriaEnvio ()) * 10;
-        return v;
+        return Math.round(v*100)/100d;
 
     }
 

@@ -11,7 +11,7 @@ public class Maritimo extends Naviera{
 
     public double calcularCosto(){
         double v = this.getVolumenMetrico () * 100 + (this.getVolumenMetrico () * this.getCategoriaEnvio ()) * 25;
-        return v;
+        return Math.round(v*100)/100d;
     }
 
     public String getRazonSocial () {

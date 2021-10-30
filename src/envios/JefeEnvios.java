@@ -33,13 +33,13 @@ public class JefeEnvios {
         return  ro;
     }
 
-    public double recibirCosto(String codigo){
-        double costo=0;
+    public List<Double> recibirCosto(String codigo){
+        List<Double>ro=new ArrayList<> ();
         for (Naviera p:this.arregloDeEnvios) {
             if (p.getCodigoEnvio ().equals (codigo)){
-                costo=p.calcularCosto ();
+                ro.add(p.calcularCosto ());
             }
-        }return costo;
+        }return ro;
 
     }
 
@@ -54,6 +54,13 @@ public class JefeEnvios {
      return ro;
     }
 
+    public double CostoTotalEnvios(){
+        double total=0;
+        for (Naviera p:this.arregloDeEnvios) {
+          total+=p.calcularCosto ();
+        }
+        return total;
+    }
 
 
 
@@ -64,6 +71,7 @@ public class JefeEnvios {
     public void setArregloDeEnvios (List<Naviera> arregloDeEnvios) {
         this.arregloDeEnvios = arregloDeEnvios;
     }
+
 
 
 }
