@@ -1,12 +1,13 @@
 package concurso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main{
 
     public static void main(String[] args) {
 
-        FanMasacre fanMasacre1=new FanMasacre("Jose","Perez","48273864",24,25,"equip muerte",150,130);
+        FanMasacre fanMasacre1=new FanMasacre("Jose","Perez","48273864",24,25,"MUERTE",150,130);
         FanMasacre fanMasacre2=new FanMasacre("Emilio","Flores","45667065",19,30,"equipo destruccion",165,120);
         FanMasacre fanMasacre3=new FanMasacre ("Carla","Flores","45223666",16,30,"Equipo nuclear",170,140);
         Televidente televidente1=new Televidente("Pedro","Ruiz","75184023",24,50,"986100453",100);
@@ -20,6 +21,8 @@ public class Main{
         administrador1.registrar(fanMasacre3);
         administrador1.registrar(televidente1);
         administrador1.registrar(televidente2);
+
+
 
 //2-Imprimir listado de participantes
         System.out.println("----------Lista De Participantes-------------\n");

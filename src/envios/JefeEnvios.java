@@ -54,9 +54,10 @@ public class JefeEnvios {
      return ro;
     }
 
-    public double CostoTotalEnvios(){
+    public double costoTotalEnvios(){
         double total=0;
         for (Naviera p:this.arregloDeEnvios) {
+
           total+=p.calcularCosto ();
         }
         return total;

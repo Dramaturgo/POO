@@ -6,6 +6,10 @@ public class FanMasacre extends Participante{
     private int puntajeBarra;
     private int puntajeEquipo;
 
+    public enum Equipo {
+
+        DESTRUCCION, MUERTE, NUCLEAR
+    }
 
     public FanMasacre(String nombre,String apellido,String dni,int edad,int cantidadMensajesTxt,String equipo,int puntajeBarra,int puntajeEquipo){
 
@@ -43,4 +47,7 @@ public class FanMasacre extends Participante{
     public void setPuntajeEquipo(int puntajeEquipo) {
         this.puntajeEquipo = puntajeEquipo;
     }
+
+
+
 }

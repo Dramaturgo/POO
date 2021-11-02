@@ -1,4 +1,4 @@
-package pa1;
+package PA1;
 
 public class ProductoVendido {
 

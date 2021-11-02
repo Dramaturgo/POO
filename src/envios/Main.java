@@ -53,7 +53,7 @@ public class Main {
         }
     //5-Calcular costo total de envios
         System.out.println ("\n------------Listar costo total de envios------------------\n");
-        System.out.println ("El costo total es de :"+jefeEnvios1.CostoTotalEnvios ()+" soles");
+        System.out.println ("El costo total es de :"+jefeEnvios1.costoTotalEnvios ()+" soles");
     }
 
 

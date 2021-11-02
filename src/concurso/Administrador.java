@@ -42,12 +42,31 @@ public class Administrador{
         this.arregloParticipante = arregloParticipante;
     }
 
-    public List<Participante>validarEdad(){
-        List<Participante>ro=new ArrayList<>();
+    /*public List<Participante> validarEquipo(){
+        List<Participante>a=new ArrayList<> ();
+           a=this.getArregloParticipante ();
         for(Participante p:this.arregloParticipante){
-            if (p.getEdad()<18) {
-                ro.add(p);
+            if(p.getClass ().getSimpleName ().equals ("FanMasacre")){
+               for(FanMasacre.Equipo aux:FanMasacre.Equipo.values ()){
+                   if(p instanceof FanMasacre l){
+                       if ((aux.toString ()).equals (l.getEquipo ())){
+                           a.remove (l);
+                       }
+                   }
+                }
             }
-        }return ro;
+        }return a;
+    }*/
+
+    public List<Participante>validarEdad() {
+        List<Participante> ro = new ArrayList<> ();
+        for (Participante p : this.arregloParticipante) {
+            if (p.getEdad () < 18) {
+                ro.add (p);
+            }
+        }
+        return ro;
     }
+
+
 }
