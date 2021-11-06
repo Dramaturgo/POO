@@ -1,4 +1,4 @@
-package com.upc.herencia;
+package Profesor;
 
 public class ProfesorTC extends Profesor{
 

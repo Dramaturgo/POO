@@ -1,4 +1,4 @@
-package com.upc.herencia;
+package Profesor;
 
 import java.util.List;
 public class Ejercicio2 {

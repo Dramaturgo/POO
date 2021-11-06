@@ -1,4 +1,4 @@
-package com.upc.herencia;
+package Profesor;
 
 public class ProfesorTP extends  Profesor{
     private double tarifaHora;

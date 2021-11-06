@@ -1,4 +1,4 @@
-package com.upc.herencia;
+package Profesor;
 
 import java.util.ArrayList;
 import java.util.List;
