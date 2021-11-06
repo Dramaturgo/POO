@@ -1,4 +1,4 @@
-package envios;
+package Naviera;
 
 public abstract class Naviera{
 

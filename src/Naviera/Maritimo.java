@@ -1,4 +1,4 @@
-package envios;
+package Naviera;
 
 public class Maritimo extends Naviera{
 
