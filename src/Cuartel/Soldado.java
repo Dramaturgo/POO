@@ -23,7 +23,7 @@ public class Soldado extends  Ataque{
     }
 
     @Override
-   public String listarDatos(){
+   public String toString (){
         return this.getClass ().getSimpleName ()+"\nNombre: "+nombre+"\nGrado: "+grado+"\nAtaque: "+ataque ()+"\n";
     }
 }

@@ -22,11 +22,11 @@ public class Main {
         cuartel1.registrarTanque (tanque3);
         System.out.println ("------SOLDADOS----------");
         for (Soldado s:cuartel1.getArregloSoldados ()){
-            System.out.println (s.listarDatos ());
+            System.out.println (s.toString ());
         }
         System.out.println ("------TANQUES-------------");
         for (Tanque t: cuartel1.getArregloTanques ()){
-            System.out.println (t.listarDatos ());
+            System.out.println (t.toString ());
         }
         System.out.println ("-------CUARTEL--------");
         System.out.println (cuartel1.ListarDatosCuartel ());

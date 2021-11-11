@@ -23,7 +23,7 @@ public class Tanque extends Ataque {
     }
 
     @Override
-   public String listarDatos(){
+   public String toString (){
         return this.getClass ().getSimpleName ()+"\nModelo: "+modelo+"\nModelo de torreta: "+torreta.getModeloTorreta ()+"\nTipo de Municion: "+torreta.getTipoMunicion ()
                 +"\nAtaque: "+ataque ()+"\n";
     }
