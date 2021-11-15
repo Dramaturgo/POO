@@ -1,4 +1,4 @@
-package Aerolinea;
+package PA3;
 
 public class Main {
 

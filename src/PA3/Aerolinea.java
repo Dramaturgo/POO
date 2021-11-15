@@ -1,4 +1,4 @@
-package Aerolinea;
+package PA3;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,7 +67,7 @@ public class Aerolinea {
 
     @Override
     public String toString () {
-        return "Aerolinea \n" + listarVuelos ();
+        return "PA3 \n" + listarVuelos ();
 
     }
 }

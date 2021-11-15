@@ -1,4 +1,4 @@
-package Aerolinea;
+package PA3;
 
 import java.util.ArrayList;
 import java.util.List;
