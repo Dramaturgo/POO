@@ -24,6 +24,7 @@ public class Main {
         historialC.registrarVisita("05/01/2009", "Operacion rodilla", 100);
         historialC.registrarVisita("06/04/2019", "Revision", 250);
 
+
         clinicaJP.asignarHistorial("59839921", historialA);
         clinicaJP.asignarHistorial("15134236", historialB);
         clinicaJP.asignarHistorial("14536231", historialC);
