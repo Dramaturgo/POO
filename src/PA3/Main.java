@@ -24,12 +24,18 @@ public class Main {
         aerolinea1.asignarAvion ("u3015",avion1);
         aerolinea1.asignarAvion ("u5070",avion2);
         //BUSCAR VUELOS POR MODELO DE AVION
-        System.out.println (aerolinea1.buscarVuelos ("Comercial"));
-        //USAR EXCEPCION
-        System.out.println (aerolinea1.buscarVuelos ("Carga"));
 
-
-
+        try {
+            System.out.println (aerolinea1.buscarVuelos ("Comercial"));
+        } catch (Exception e) {
+            System.out.println (e.getMessage ());
+        }
+        //Validar Excepcion
+        try {
+            System.out.println (aerolinea1.buscarVuelos ("Carga"));
+        } catch (Exception e) {
+            System.out.println (e.getMessage ());
+        }
 
 
     }

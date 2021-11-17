@@ -33,22 +33,14 @@ public class Aerolinea {
         }
     }
 
-    public List<Vuelo> buscarVuelos (String ModeloDeAvion) {
+    public List<Vuelo> buscarVuelos (String ModeloDeAvion) throws Exception {
         List<Vuelo> vuelos = new ArrayList<> ();
-
         for (Vuelo v : this.arregloVuelos) {
             if (v.getAvion ().getModelo ().equals (ModeloDeAvion)) {
                 vuelos.add (v);
             }
         }
-        try {
-            if (vuelos.size () == 0) {
-                throw new NullPointerException ();
-
-            }
-        } catch (NullPointerException e) {
-            System.out.println ("Modelo de avion invalido");
-        }
+            if (vuelos.size () == 0)throw new Exception ("Modelo de avion invalido");
         return vuelos;
     }
 
