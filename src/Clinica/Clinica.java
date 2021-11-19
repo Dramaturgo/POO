@@ -36,13 +36,15 @@ public class Clinica {
         }
     }
 
-    public List<Paciente> obtenerPacientesDePrioridad(String prioridad) {
+    public List<Paciente> obtenerPacientesDePrioridad(String prioridad)throws Exception {
         List<Paciente> listadoAux = new ArrayList<>();
         for (Paciente paciente: pacientes) {
-            if (paciente.obtenerPrioridad().equals(prioridad)) {
-                listadoAux.add(paciente);
+            if (paciente.obtenerPrioridad ().equals (prioridad)) {
+                listadoAux.add (paciente);
             }
         }
+        if(listadoAux.size ()==0) throw new Exception ("Prioridad Incorrecta");
+
         return listadoAux;
     }
 

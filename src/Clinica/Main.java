@@ -36,10 +36,28 @@ public class Main {
 
         System.out.println("D)");
 
-        List<Paciente> pacientesDePrioridad = clinicaJP.obtenerPacientesDePrioridad("Baja");
-        for (Paciente paciente: pacientesDePrioridad) {
-            System.out.println(paciente);
+
+        List<Paciente>pacientesDePrioridad=null;
+
+        try {
+            pacientesDePrioridad = clinicaJP.obtenerPacientesDePrioridad ("Baja");
+            for (Paciente paciente : pacientesDePrioridad) {
+                System.out.println (paciente);
+            }
+        }catch (Exception e){
+            System.out.println (e.getMessage ());
         }
+
+        try{
+            pacientesDePrioridad=clinicaJP.obtenerPacientesDePrioridad ("Alt");
+            for(Paciente paciente:pacientesDePrioridad){
+                System.out.println (paciente);
+            }
+        }catch (Exception e){
+            System.out.println (e.getMessage ());
+        }
+
+
 
     }
 }
