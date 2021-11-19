@@ -34,7 +34,7 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-        System.out.println("Capacidad de Ataque:"+cuartel.obtenerCapacidadAtaque());
+        System.out.println("Capacidad de Ataque: "+cuartel.obtenerCapacidadAtaque());
         System.out.println("--------------****----------------");
         for(Atacante p: cuartel.getArregloAtancantes()){
             System.out.println(p.toString()+ "Atacando:" +  p.atacar());
