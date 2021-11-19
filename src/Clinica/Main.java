@@ -9,7 +9,7 @@ public class Main {
         System.out.println("C)");
         Clinica clinicaJP = new Clinica();
         clinicaJP.registrarPaciente("14536231", "Jose Torres", 25);
-        clinicaJP.registrarPaciente("59839921", "Carlos Flores", 20);
+        //clinicaJP.registrarPaciente("59839921", "Carlos Flores", 20);
         clinicaJP.registrarPaciente("15134236", "Sofia Cardenas", 22);
 
         Historial historialA = new Historial("HIS01");
@@ -49,7 +49,7 @@ public class Main {
         }
 
         try{
-            pacientesDePrioridad=clinicaJP.obtenerPacientesDePrioridad ("Alt");
+            pacientesDePrioridad=clinicaJP.obtenerPacientesDePrioridad ("Alta");
             for(Paciente paciente:pacientesDePrioridad){
                 System.out.println (paciente);
             }

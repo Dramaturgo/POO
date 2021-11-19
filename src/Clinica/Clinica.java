@@ -43,8 +43,8 @@ public class Clinica {
                 listadoAux.add (paciente);
             }
         }
-        if(listadoAux.size ()==0) throw new Exception ("Prioridad Incorrecta");
-
+        if(!prioridad.equalsIgnoreCase ("Alta") && !prioridad.equalsIgnoreCase ("Baja") && !prioridad.equalsIgnoreCase ("Media"))throw new Exception ("Prioridad incorrecta");
+        if(listadoAux.size ()==0)throw new Exception ("Prioridad ingresada no contiene informacion");
         return listadoAux;
     }
 
