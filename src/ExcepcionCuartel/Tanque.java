@@ -1,4 +1,4 @@
-package ExceptioCuartel;
+package ExcepcionCuartel;
 
 public class Tanque extends Atacante{
     private String modelo;

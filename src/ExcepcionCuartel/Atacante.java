@@ -1,4 +1,4 @@
-package ExceptioCuartel;
+package ExcepcionCuartel;
 
 
 public abstract class Atacante {

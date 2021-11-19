@@ -1,4 +1,4 @@
-package ExceptioCuartel;
+package ExcepcionCuartel;
 
 
 public class Soldado extends Atacante{

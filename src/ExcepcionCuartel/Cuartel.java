@@ -1,4 +1,4 @@
-package ExceptioCuartel;
+package ExcepcionCuartel;
 
 import java.util.ArrayList;
 import java.util.List;
