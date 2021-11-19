@@ -18,7 +18,7 @@ public class DataFile {
             //se debe enviar al log del programador
             System.out.println("Programador:" + e);
             //e.printStackTrace();
-            throw new Exception("Cliente: No se puede leer el archivo, Gracias.");
+            throw new Exception("Cliente: No se puede leer el archivo, Gracias. ");
 
         }finally{
             if(fis!=null)
