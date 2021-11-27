@@ -1,4 +1,4 @@
-package Comercial;
+package Terminal;
 
 public class Motor {
 

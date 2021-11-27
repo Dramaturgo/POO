@@ -4,13 +4,13 @@ public class Main {
 
     public static void main (String[] args) {
     //REGISTRAR VUELOS,ASIENTOS
-        Avion avion1=new Avion ("Comercial",12,"A");
+        Avion avion1=new Avion ("Terminal",12,"A");
         avion1.registrarAsientos (14,"C");
         avion1.registrarAsientos (15,"E");
         Avion avion2=new Avion ("Militar",13,"E");
         avion2.registrarAsientos (16,"A");
         avion2.registrarAsientos (17,"D");
-        Avion avion3=new Avion ("Comercial",14,"A");
+        Avion avion3=new Avion ("Terminal",14,"A");
         avion3.registrarAsientos (15,"A");
         avion3.registrarAsientos (15,"E");
 
@@ -26,7 +26,7 @@ public class Main {
         //BUSCAR VUELOS POR MODELO DE AVION
 
         try {
-            System.out.println (aerolinea1.buscarVuelos ("Comercial"));
+            System.out.println (aerolinea1.buscarVuelos ("Terminal"));
         } catch (Exception e) {
             System.out.println (e.getMessage ());
         }
