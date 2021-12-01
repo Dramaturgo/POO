@@ -32,6 +32,15 @@ public class Sala {
         return monto;
     }
 
+    public boolean cuentaConAsiento4DX() {
+        for (Asiento asiento: listaDeAsientos) {
+            if (asiento.getCategoria().equals("4DX")) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public String getCodigo () {
         return codigo;
     }

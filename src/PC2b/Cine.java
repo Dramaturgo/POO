@@ -39,6 +39,18 @@ public class Cine {
         if(sala==null)throw new Exception ("Sala no encontrada");
     }
 
+    public Sala obtenerSalaMayorVentaAsiento4DX() {
+        Sala maxSala = null;
+        double maxVenta = 0;
+        for (Sala sala: listaDeSalas) {
+            if (sala.cuentaConAsiento4DX() && sala.calcularMontoTotal () > maxVenta) {
+                maxVenta = sala.calcularMontoTotal ();
+                maxSala = sala;
+            }
+        }
+        return maxSala;
+    }
+
 
 
     public List<Sala> getListaDeSalas () {
