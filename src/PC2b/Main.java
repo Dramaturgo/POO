@@ -27,7 +27,6 @@ public class Main {
         controlador.asignarAsientos ("u4015",2,"B","Regular");
         controlador.asignarAsientos ("u4015",1,"A","4DX");
 
-
         System.out.println (cineMax.toString ());
 
         Sala salaMayorVenta = cineMax.obtenerSalaMayorVentaAsiento4DX();
