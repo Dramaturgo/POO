@@ -1,4 +1,4 @@
-package Cine;
+package PA4;
 
 public class SalaRegular extends SalaDeCine{
 
